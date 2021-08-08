@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9TDjWcfXhiNwpbl2UWeLYEcbb4K//EJSM55MMQFDe37WtlNnbzoy8C6XSbNM2m9EXYPSPHQCijiS9M3ETN0Czw==",
+  "dgSpecHash": "S1iW0nO7OlUAWNYrGnmwIqyNj+7UsY81FRNuEwA3/9Bi5Ti7hG0uIraoLbkGkYj4k02uU3mPcmRDkYyFLL9PZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj": {}
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj": {
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj",
         "projectName": "FoodApp.iOS",
-        "projectPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj",
+        "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.iOS\\FoodApp.iOS.csproj",
         "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.iOS\\obj\\",
+        "outputPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
-                "projectPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj"
+              "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
+                "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
+        "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
         "projectName": "FoodApp",
-        "projectPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
+        "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
         "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\obj\\",
+        "outputPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

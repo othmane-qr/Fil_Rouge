@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9qKmipPfNvFZdS/AblGN461pkp6FBSDaG/dsTGqVHBxyWFT19pEdGcXmNHNl3qnbHhTRmEdlnb6NY1BoEDyXqQ==",
+  "dgSpecHash": "8vJ6q+ptiJkhUvL7ElH6AyqRNf+ilxB0fO/LcjVEDTT7V7XudmjRo+sbZULG/7KhaVjmyxnSvaa4XmgmZGFJDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",

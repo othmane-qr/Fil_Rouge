@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {}
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
+        "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
         "projectName": "FoodApp",
-        "projectPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
+        "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj",
         "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\obj\\",
+        "outputPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

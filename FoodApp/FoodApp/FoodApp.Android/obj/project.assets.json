@@ -2149,11 +2149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
       "projectName": "FoodApp.Android",
-      "projectPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
+      "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
       "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2176,8 +2176,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
-              "projectPath": "C:\\Users\\Administrateur\\source\\repos\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj"
+            "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj": {
+              "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp\\FoodApp.csproj"
             }
           }
         }
