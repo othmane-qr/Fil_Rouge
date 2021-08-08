@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrateur\\Desktop\\Ecommerce-Api-master\\FoodApi\\FoodApi\\FoodApi.csproj": {}
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApi\\FoodApi\\FoodApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrateur\\Desktop\\Ecommerce-Api-master\\FoodApi\\FoodApi\\FoodApi.csproj": {
+    "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApi\\FoodApi\\FoodApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Ecommerce-Api-master\\FoodApi\\FoodApi\\FoodApi.csproj",
+        "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApi\\FoodApi\\FoodApi.csproj",
         "projectName": "FoodApi",
-        "projectPath": "C:\\Users\\Administrateur\\Desktop\\Ecommerce-Api-master\\FoodApi\\FoodApi\\FoodApi.csproj",
+        "projectPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApi\\FoodApi\\FoodApi.csproj",
         "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrateur\\Desktop\\Ecommerce-Api-master\\FoodApi\\FoodApi\\obj\\",
+        "outputPath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApi\\FoodApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

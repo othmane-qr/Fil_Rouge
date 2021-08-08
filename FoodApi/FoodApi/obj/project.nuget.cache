@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NiHfZDUz1rYoiTS92WpsY8hVBlLupslb54Pg28oU+4F4/OKMn69LryQ7D4t/ZgjxRIeXf+JeU6XDJivh/DIM6g==",
+  "dgSpecHash": "WoiUcbwu5j0tamMsqLngzlOJonfRPz0meBl27A9ATPH3ieXotJo5Wr9Ymot5so5+U3+nLixAaOIrnBpj6UtpjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\Ecommerce-Api-master\\FoodApi\\FoodApi\\FoodApi.csproj",
+  "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApi\\FoodApi\\FoodApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\aspnetcore.authentication.plugin\\1.0.1\\aspnetcore.authentication.plugin.1.0.1.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\aspnetcore.imageuploader\\1.0.0\\aspnetcore.imageuploader.1.0.0.nupkg.sha512",
