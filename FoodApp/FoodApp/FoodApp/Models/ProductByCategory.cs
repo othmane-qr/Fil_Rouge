@@ -4,7 +4,13 @@ using System.Text;
 
 namespace FoodApp.Models
 {
-    class ProductByCategory
+   public class ProductByCategory
     {
+        public int id { get; set; }
+        public string name { get; set; }
+        public double price { get; set; }
+        public string detail { get; set; }
+        public int categoryId { get; set; }
+        public string imageUrl { get; set; }
     }
 }

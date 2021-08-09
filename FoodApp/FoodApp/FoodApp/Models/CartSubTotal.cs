@@ -4,9 +4,8 @@ using System.Text;
 
 namespace FoodApp.Models
 {
-    public class Login
+    public class CartSubTotal
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public double subTotal { get; set; }
     }
 }
