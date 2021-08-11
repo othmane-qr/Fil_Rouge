@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "271wy6L5eAVcuaiAjIi4Hi0ERP1yYjjeatMxlNFNwF9ag4bFPKsoDJsOphZqaYs3KuHoOjoOfBM4lvLM2kd7og==",
+  "dgSpecHash": "JxJEnrpvqDY7dLN7EKPA+wK32Eyycku2uojscwmURiBRZk1t0TYdVP2MA58h1/KrZuLzzTXpSRcRQrwPNtCGyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,16 @@
       "warningLevel": 1,
       "message": "Passage à une version antérieure du package détecté : Xamarin.Essentials de 1.7.0 à 1.6.1. Référencez le package directement à partir du projet pour sélectionner une version différente. \r\n FoodApp.Android -> FoodApp -> Xamarin.Essentials (>= 1.7.0) \r\n FoodApp.Android -> Xamarin.Essentials (>= 1.6.1)",
       "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Passage à une version antérieure du package détecté : Xamarin.Forms de 5.0.0.2083 à 5.0.0.2012. Référencez le package directement à partir du projet pour sélectionner une version différente. \r\n FoodApp.Android -> FoodApp -> Xamarin.Forms (>= 5.0.0.2083) \r\n FoodApp.Android -> Xamarin.Forms (>= 5.0.0.2012)",
+      "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v11.0"
       ]

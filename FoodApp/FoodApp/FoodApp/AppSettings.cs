@@ -4,7 +4,8 @@ using System.Text;
 
 namespace FoodApp
 {
-    class AppSettings
+   public static class AppSettings
     {
+        public static string ApiUrl = "http://localhost:49887/";
     }
 }
