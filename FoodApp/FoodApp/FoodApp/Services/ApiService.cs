@@ -20,22 +20,34 @@ namespace FoodApp.Services
                 Email = email,
                 Password = password
             };
+            /*     ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;*/
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
-            var httpClient = new HttpClient();
+            // Pass the handler to httpclient(from you are calling api)
+            HttpClient httpClient = new HttpClient(clientHandler);
+            /* var httpClient = new HttpClient(new System.Net.Http.HttpClientHandler());*/
             var json = JsonConvert.SerializeObject(register);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync(AppSettings.ApiUrl + "api/Accounts/Register", content);
             if (!response.IsSuccessStatusCode) return false;
             return true;
+
         }
-        public static async Task<bool> Login(string email, string password)
+
+        public async Task<bool> Login(string email, string password)
         {
             var login = new Login()
             {
                 Email = email,
                 Password = password
             };
-            var httpClient = new HttpClient();
+
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+
+            // Pass the handler to httpclient(from you are calling api)
+            HttpClient httpClient = new HttpClient(clientHandler);
             var json = JsonConvert.SerializeObject(login);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync(AppSettings.ApiUrl + "api/Accounts/Login", content);
@@ -46,7 +58,6 @@ namespace FoodApp.Services
             Preferences.Set("userID", result.user_Id);
             Preferences.Set("userName", result.user_name);
             return true;
-
         }
 
         public static async Task<List<Category>> GetCategories()

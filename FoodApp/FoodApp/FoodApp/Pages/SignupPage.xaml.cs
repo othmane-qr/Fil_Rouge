@@ -21,7 +21,7 @@ namespace FoodApp.Pages
         {
             if (!EntPassword.Text.Equals(EntConfirmPassword.Text))
             {
-               await DisplayAlert("Password Mismatch", "Please check your passwords", "Cancel");
+                await DisplayAlert("Password Mismatch", "Please check your passwords", "Cancel");
             }
             else
             {
@@ -30,7 +30,7 @@ namespace FoodApp.Pages
                 if (response)
                 {
                     await DisplayAlert("Hi", "Your accounthas been created", "Alright");
-                    
+                    await Navigation.PushAsync(new LoginPage());
                 }
                 else
                 {
@@ -38,11 +38,11 @@ namespace FoodApp.Pages
                 }
             }
 
-
         }
-           private void BtnLogin_Clicked(object sender, EventArgs e)
+
+        private async void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }
