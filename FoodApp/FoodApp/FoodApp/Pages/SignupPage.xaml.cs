@@ -30,7 +30,7 @@ namespace FoodApp.Pages
                 if (response)
                 {
                     await DisplayAlert("Hi", "Your accounthas been created", "Alright");
-                    await Navigation.PushAsync(new LoginPage());
+                    await Navigation.PushModalAsync(new LoginPage());
                 }
                 else
                 {
@@ -42,7 +42,7 @@ namespace FoodApp.Pages
 
         private async void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LoginPage());
+            await Navigation.PushModalAsync(new LoginPage());
         }
     }
 }

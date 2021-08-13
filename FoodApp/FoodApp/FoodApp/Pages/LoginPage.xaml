@@ -21,7 +21,7 @@
                        HorizontalOptions="Center"
                        VerticalOptions="Center">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer x:Name="TapBackArrow"  Tapped="TapBackArrow_Tapped"/>
+                        <TapGestureRecognizer x:Name="TapBackArrow" Tapped="TapBackArrow_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Grid.Column="1"
