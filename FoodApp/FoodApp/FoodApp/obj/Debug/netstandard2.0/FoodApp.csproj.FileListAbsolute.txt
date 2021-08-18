@@ -28,3 +28,4 @@ C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\bin\Debug\nets
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\bin\Debug\netstandard2.0\FoodApp.pdb
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\Pages\LoginPage.xaml.g.cs
+C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\Pages\HomePage.xaml.g.cs

@@ -29,7 +29,7 @@ namespace FoodApp.Pages
             var response = await apiService.Login(EntEmail.Text, EntPassword.Text);
             if (response)
             {
-                Application.Current.MainPage = new NavigationPage();
+                Application.Current.MainPage = new NavigationPage(new HomePage());
             }
             else
             {
