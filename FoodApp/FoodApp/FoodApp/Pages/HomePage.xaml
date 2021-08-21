@@ -68,9 +68,14 @@
                                      Orientation="Vertical">
                             <Image Aspect="Fill"
                                    HeightRequest="150"
-                                   WidthRequest="150" />
-                            <Label TextColor="#000000" />
-                            <Label TextColor="#B00905" />
+                                   WidthRequest="150" 
+                                   Source="{Binding FullImageUrl}"/>
+                            
+                            <Label TextColor="#000000"
+                                  Text="{Binding name}"/>
+                            
+                            <Label TextColor="#B00905" 
+                                   Text="{Binding price , StringFormat='${0}'}"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -161,7 +166,7 @@
                 </Grid.ColumnDefinitions>
                 <StackLayout BackgroundColor="White"
                              x:Name="SlMenu" >
-                    <Grid BackgroundColor="#CE0B06"
+                    <Grid BackgroundColor="#5965B1"
                           HeightRequest="120">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="4*" />
