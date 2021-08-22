@@ -16,11 +16,28 @@ namespace FoodApp.Pages
     public partial class HomePage : ContentPage
     {
         public ObservableCollection<PopularProduct> ProductsCollection { get; set; }
+        public ObservableCollection<Category> CategoryCollection { get; set; }
+
         public HomePage()
         {
             InitializeComponent();
             ProductsCollection = new ObservableCollection<PopularProduct>();
+            CategoryCollection = new ObservableCollection<Category>();
             GetPopularProducts();
+            GetCategories();
+        }
+
+        private async void GetCategories()
+        {
+            var apiService = new ApiService();
+            var categories = await apiService.GetCategories();
+            foreach (var cat in categories)
+            {
+                CategoryCollection.Add(cat);
+            }
+            CvCategories.ItemsSource = CategoryCollection;
+
+
         }
 
         private async void GetPopularProducts()
