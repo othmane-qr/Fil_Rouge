@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              mc:Ignorable="d"
              x:Class="FoodApp.Pages.HomePage"
              NavigationPage.HasNavigationBar="False">
@@ -41,7 +42,7 @@
                                                        HeightRequest="90"
                                                        WidthRequest="90"
                                                        HorizontalOptions="Center">
-                                                    <Image Aspect="AspectFill"
+                                                    <ffimageloading:CachedImage  Aspect="Fill"
                                                            HorizontalOptions="FillAndExpand"
                                                            VerticalOptions="FillAndExpand" 
                                                            Source="{Binding FullImageUrl}"/>
@@ -68,7 +69,7 @@
                                      Padding="10"
                                      Margin="15,0,15,0"
                                      Orientation="Vertical">
-                            <Image Aspect="Fill"
+                            <ffimageloading:CachedImage  Aspect="Fill"
                                    HeightRequest="150"
                                    WidthRequest="150" 
                                    Source="{Binding FullImageUrl}"/>
