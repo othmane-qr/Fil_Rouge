@@ -79,7 +79,7 @@ namespace FoodApp.Pages
         {
             var currentSelection = e.CurrentSelection.FirstOrDefault() as Category;
             if (currentSelection == null) return;
-            Navigation.PushModalAsync(new ProductsListPage());
+            Navigation.PushModalAsync(new ProductsListPage(currentSelection.id, currentSelection.name));
             ((CollectionView)sender).SelectedItem = null;
 
         }
