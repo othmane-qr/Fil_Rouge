@@ -30,5 +30,30 @@ namespace FoodApp.Pages
             LblTotalPrice.Text = LblPrice.Text;
 
         }
+
+        private void TapIncrement_Tapped(object sender, EventArgs e)
+        {
+            var i = Convert.ToInt16(LblQty.Text);
+            i++;
+            LblQty.Text = i.ToString();
+            LblTotalPrice.Text = (Convert.ToInt16(LblQty.Text) * Convert.ToInt16(LblPrice.Text)).ToString();
+        }
+
+        private void TapDecrement_Tapped(object sender, EventArgs e)
+        {
+            var i = Convert.ToInt16(LblQty.Text);
+            i--;
+            if (i < 1)
+            {
+                return;
+            }
+            LblQty.Text = i.ToString();
+            LblTotalPrice.Text = (Convert.ToInt16(LblQty.Text) * Convert.ToInt16(LblPrice.Text)).ToString();
+        }
+
+        private void TapBack_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PopModalAsync();
+        }
     }
 }
