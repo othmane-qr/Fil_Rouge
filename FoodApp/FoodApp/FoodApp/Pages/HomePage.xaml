@@ -11,7 +11,8 @@
 
         <Grid>
             <CollectionView x:Name="CvProducts"
-                            SelectionMode="Single">
+                            SelectionMode="Single"
+                            SelectionChanged="CvProducts_SelectionChanged">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"
                                      Span="2" />
