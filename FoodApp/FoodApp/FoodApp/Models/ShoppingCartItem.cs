@@ -11,6 +11,7 @@ namespace FoodApp.Models
         public int Qty { get; set; }
         public double TotalAmount { get; set; }
         public string ProductName { get; set; }
-        
+        public object ProductId { get; internal set; }
+        public int CustomerId { get; internal set; }
     }
 }
