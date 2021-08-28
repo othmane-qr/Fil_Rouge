@@ -54,5 +54,23 @@ namespace FoodApp.Pages
             Navigation.PopModalAsync();
 
         }
+
+        private async void TapClearCart_Tapped(object sender, EventArgs e)
+        {
+            var apiService = new ApiService();
+            var shoppingCartItems = await apiService.GetShoppingCartItems(Preferences.Get("userID", 0));
+
+            var response = await apiService.ClearShoppingCart(Preferences.Get("userID", 0));
+            if (response)
+            {
+                await DisplayAlert("", "Your cart has been cleared", "Alright");
+                LvShoppingCart.ItemsSource = null;
+                LblTotalPrice.Text = "0";
+            }
+            else
+            {
+                await DisplayAlert("", "Something went wrong", "Cancel");
+            }
+        }
     }
 }

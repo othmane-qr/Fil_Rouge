@@ -35,7 +35,7 @@
                        VerticalTextAlignment="End"
                        HorizontalTextAlignment="Center">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer x:Name="TapClearCart" />
+                        <TapGestureRecognizer x:Name="TapClearCart"  Tapped="TapClearCart_Tapped"/>
                     </Label.GestureRecognizers>
                 </Label>
             </Grid>
