@@ -91,5 +91,10 @@ namespace FoodApp.Pages
             Navigation.PushModalAsync(new ProductDetailPage(currentSelection.id));
             ((CollectionView)sender).SelectedItem = null;
         }
+
+        private void TapCartIcon_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new CartPage());
+        }
     }
 }

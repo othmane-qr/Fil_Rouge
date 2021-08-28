@@ -31,3 +31,4 @@ C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\nets
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\Pages\HomePage.xaml.g.cs
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\Pages\ProductsListPage.xaml.g.cs
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\Pages\ProductDetailPage.xaml.g.cs
+C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp\obj\Debug\netstandard2.0\Pages\CartPage.xaml.g.cs
