@@ -6,6 +6,6 @@ namespace FoodApp
 {
    public static class AppSettings
     {
-        public static string ApiUrl = "http://localhost:49887/";
+        public static string ApiUrl = "http://192.168.1.17:45455/";
     }
 }
