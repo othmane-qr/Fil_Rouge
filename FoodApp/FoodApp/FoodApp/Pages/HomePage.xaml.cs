@@ -61,11 +61,10 @@ namespace FoodApp.Pages
 
         }
 
-        private async void TapCloseMenu_Tapped(object sender, EventArgs e)
+        private void TapCloseMenu_Tapped(object sender, EventArgs e)
         {
-            
-            await SlMenu.TranslateTo(-250, 0, 400, Easing.Linear);
-            GridOverlay.IsVisible = false;
+
+            CloseHamburgerMenu();
         }
         protected override async void OnAppearing()
         {
@@ -75,6 +74,17 @@ namespace FoodApp.Pages
             LblTotalItems.Text = response.totalItems.ToString();
         }
 
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            CloseHamburgerMenu();
+        }
+
+        private async void CloseHamburgerMenu()
+        {
+            await SlMenu.TranslateTo(-250, 0, 400, Easing.Linear);
+            GridOverlay.IsVisible = false;
+        }
         private void CvCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var currentSelection = e.CurrentSelection.FirstOrDefault() as Category;
@@ -95,6 +105,11 @@ namespace FoodApp.Pages
         private void TapCartIcon_Tapped(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new CartPage());
+        }
+
+        private void TapOrders_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new OrdersPage());
         }
     }
 }
