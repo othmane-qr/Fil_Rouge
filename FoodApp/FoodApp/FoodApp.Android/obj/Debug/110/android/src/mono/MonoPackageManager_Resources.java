@@ -14,6 +14,7 @@ public class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"SkiaSharp.dll",
+		"UnixTimeStamp.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

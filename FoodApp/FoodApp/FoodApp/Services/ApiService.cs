@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using UnixTimeStamp;
 using Xamarin.Essentials;
 
 namespace FoodApp.Services
@@ -58,11 +59,14 @@ namespace FoodApp.Services
             Preferences.Set("accessToken", result.access_token);
             Preferences.Set("userID", result.user_Id);
             Preferences.Set("userName", result.user_name);
+            Preferences.Set("tokenExpirationTime", result.expiration_Time);
+            Preferences.Set("currentTime", UnixTime.GetCurrentTime());
             return true;
         }
 
         public async Task<List<Category>> GetCategories()
         {
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -75,6 +79,7 @@ namespace FoodApp.Services
 
         public async Task<Product> GetProductByID(int productId)
         {
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -87,6 +92,7 @@ namespace FoodApp.Services
 
         public async Task<List<ProductByCategory>> GetProductsByCategory(int categoryId)
         {
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -99,6 +105,7 @@ namespace FoodApp.Services
 
         public async Task<List<PopularProduct>> GetPopularProducts()
         {
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -111,7 +118,7 @@ namespace FoodApp.Services
 
         public async Task<bool> AddItemToCart(ShoppingCartItem shoppingCartItem)
         {
-
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -128,6 +135,7 @@ namespace FoodApp.Services
         }
         public async Task<CartSubTotal> GetCartSubTotal(int userId)
         {
+            await TokenValidor.CheckTokenValidity();
 
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
@@ -141,6 +149,7 @@ namespace FoodApp.Services
         }
         public async Task<List<ShoppingCartItem>> GetShoppingCartItems(int userId)
         {
+            await TokenValidor.CheckTokenValidity();
 
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
@@ -155,7 +164,7 @@ namespace FoodApp.Services
 
         public async Task<TotalCartItem> GetTotalCartItem(int userId)
         {
-
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -169,7 +178,7 @@ namespace FoodApp.Services
 
         public async Task<bool> ClearShoppingCart(int userId)
         {
-
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -184,7 +193,7 @@ namespace FoodApp.Services
 
         public async Task<OrderResponse> PlaceOrder(Order order)
         {
-
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -202,6 +211,7 @@ namespace FoodApp.Services
 
         public async Task<List<OrderByUser>> GetOrdersByUser(int userId)
         {
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -213,6 +223,7 @@ namespace FoodApp.Services
         }
         public async Task<List<Order>> GetOrderDetails(int userId)
         {
+            await TokenValidor.CheckTokenValidity();
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
@@ -221,6 +232,25 @@ namespace FoodApp.Services
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", Preferences.Get("accessToken", string.Empty));
             var response = await httpClient.GetStringAsync(AppSettings.ApiUrl + "api/Orders/OrdersByUser/" + userId);
             return JsonConvert.DeserializeObject<List<Order>>(response);
+        }
+    }
+
+    public class TokenValidor
+    {
+        public static async Task CheckTokenValidity()
+        {
+            var expirationTime = Preferences.Get("tokenExpirationTime", 0);
+            Preferences.Set("currentTime", UnixTime.GetCurrentTime());
+            var currentTime =  Preferences.Get("currentTime", 0);
+            var apiService = new ApiService();
+            if (expirationTime < currentTime)
+            {
+              var email =  Preferences.Get("email", string.Empty);
+              var password = Preferences.Get("password", string.Empty);
+              await apiService.Login(email,password);
+
+            }
+
         }
     }
 }

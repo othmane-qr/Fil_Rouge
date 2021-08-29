@@ -1263,3 +1263,4 @@ C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp.Android\obj\De
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp.Android\obj\Debug\110\android\src\ffimageloading\cross\MvxCachedImageView.java
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp.Android\obj\Debug\110\android\src\ffimageloading\cross\MvxSvgCachedImageView.java
 C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp.Android\obj\Debug\110\android\src\ffimageloading\views\ImageViewAsync.java
+C:\Users\Administrateur\Desktop\Fil_Rouge\FoodApp\FoodApp\FoodApp.Android\obj\Debug\110\android\assets\UnixTimeStamp.dll

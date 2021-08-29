@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FUZqXJ6oaHdSR0YlEvtbeBgfJq/yuhVhqcVwNG/mEM6UMiubPUDT+Nz9iCkEr6gNTonGhUmDAFzKyRbnBJCl/g==",
+  "dgSpecHash": "CSKp6le01t1zaf5W1lqLiHqg2kq/qQRS/5VuzXboYryUhCkBiDyTDOvJ9+0VPk4Pt2667OPtbQMoQFv0zCQ6bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrateur\\Desktop\\Fil_Rouge\\FoodApp\\FoodApp\\FoodApp.Android\\FoodApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrateur\\.nuget\\packages\\epoch.unix.timestamp\\2.0.0\\epoch.unix.timestamp.2.0.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\skiasharp\\1.68.0\\skiasharp.1.68.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

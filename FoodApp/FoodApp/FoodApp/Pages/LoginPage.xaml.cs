@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -27,6 +27,9 @@ namespace FoodApp.Pages
         {
             var apiService = new ApiService();
             var response = await apiService.Login(EntEmail.Text, EntPassword.Text);
+            Preferences.Set("email", EntEmail.Text);
+            Preferences.Set("password", EntPassword.Text);
+
             if (response)
             {
                 Application.Current.MainPage = new NavigationPage(new HomePage());

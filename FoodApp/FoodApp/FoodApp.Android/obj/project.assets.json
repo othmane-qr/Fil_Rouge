@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
+      "Epoch.Unix.TimeStamp/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/UnixTimeStamp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/UnixTimeStamp.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -1082,6 +1091,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Epoch.Unix.TimeStamp": "2.0.0",
           "Newtonsoft.Json": "13.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -1099,6 +1109,18 @@
     }
   },
   "libraries": {
+    "Epoch.Unix.TimeStamp/2.0.0": {
+      "sha512": "80BatcGiOqJuC2V/L3Zu0mvi+N8C2V6ToxZOcF5iVe5VKx/23UBoSCPFIw2ZmlbZbc3t+2ynsa2P0ajO6Smblw==",
+      "type": "package",
+      "path": "epoch.unix.timestamp/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "epoch.unix.timestamp.2.0.0.nupkg.sha512",
+        "epoch.unix.timestamp.nuspec",
+        "lib/netstandard2.0/UnixTimeStamp.dll"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -2528,6 +2550,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "Epoch.Unix.TimeStamp >= 2.0.0",
       "FoodApp >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
@@ -2578,6 +2601,10 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "Epoch.Unix.TimeStamp": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.1, )"

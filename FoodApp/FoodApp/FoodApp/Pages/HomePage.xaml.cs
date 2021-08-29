@@ -121,5 +121,10 @@ namespace FoodApp.Pages
         {
             Navigation.PushModalAsync(new CartPage());
         }
+
+        private void TapLogout_Tapped(object sender, EventArgs e)
+        {
+
+        }
     }
 }
