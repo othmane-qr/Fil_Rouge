@@ -116,5 +116,10 @@ namespace FoodApp.Pages
         {
             Navigation.PushModalAsync(new ContactPage());
         }
+
+        private void TapCart_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new CartPage());
+        }
     }
 }

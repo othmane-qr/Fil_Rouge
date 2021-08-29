@@ -219,7 +219,7 @@
                                VerticalTextAlignment="Center"
                                FontSize="20" />
                         <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer x:Name="TapCart" />
+                            <TapGestureRecognizer x:Name="TapCart" Tapped="TapCart_Tapped" />
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Spacing="30"
