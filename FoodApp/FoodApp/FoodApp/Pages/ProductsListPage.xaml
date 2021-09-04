@@ -22,7 +22,7 @@
                 </Image>
                 <Label x:Name="LblCategoryName"
                        Grid.Column="1"
-                       TextColor="#ff9128"
+                       TextColor="#80574D"
                        FontSize="Large"
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center" />

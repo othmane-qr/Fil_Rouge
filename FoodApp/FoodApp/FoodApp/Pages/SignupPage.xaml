@@ -11,7 +11,7 @@
         <ScrollView>
             <StackLayout Spacing="20"
                          Margin="25">
-                <Label TextColor="#ff9128"
+                <Label TextColor="#80574D"
                        Text="SIGN UP"
                        FontSize="Large"
                        FontAttributes="Bold"
